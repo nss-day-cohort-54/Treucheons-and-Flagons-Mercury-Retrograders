@@ -1,8 +1,19 @@
+import { fetchPlayers } from "./player/PlayerProvider.js"
+import { fetchScore } from "./score/TeamScoreProvider.js"
 import { TF } from "./T-F.js"
+import { fetchTeam } from "./team/TeamProvider.js"
 
-const htmlTarget = document.querySelector(".mainContainer")
+
 const renderHTML = () => {
-    htmlTarget.innerHTML = TF()
+    
+    fetchPlayers()
+    fetchScore()
+    fetchTeam().then(
+        ()=> {
+            document.querySelector(".mainContainer").innerHTML = TF()
+            
+        })
+    
 }
 
 renderHTML()
