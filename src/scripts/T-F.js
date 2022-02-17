@@ -1,5 +1,8 @@
 //purpose of module is to produce skeleton HTML for main.js
 
+import { playerHTML } from "./player/Player.js"
+import { teamScoreHTML } from "./score/TeamScore.js"
+import { teamHTML } from "./team/Team.js"
 
 export const TF = () => {
     return `
