@@ -9,9 +9,8 @@ import { playersList } from "./PlayerList.js"
 //class="newPlayer"
 
 
-
 export const playerHTML = () => {
-    const playerSection = `<section>${playersList()}</section>`
-    const htmlTarget = document.querySelector(".newPlayer")
-    htmlTarget.innerHTML = playerSection
+    return `<section>${playersList()}` 
 }
+
+

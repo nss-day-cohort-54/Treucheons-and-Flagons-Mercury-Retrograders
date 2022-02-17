@@ -4,7 +4,7 @@
 
 const API = "http://localhost:8088"
 
-const applicationStateTeamScore = []
+let applicationStateTeamScore = []
 
 export const fetchScore = () => {
     //Get score array from within json file

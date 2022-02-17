@@ -4,9 +4,7 @@ import { teamList } from "./TeamList.js"
 
 
 export const teamHTML = () => {
-    const teamSection = `<section>${teamList()}</section>`
-    return teamSection
+    return `<section>${teamList()}</section>`
 }
 
-const htmlTarget = document.querySelector(".leaderboard")
-htmlTarget.innerHTML = teamHTML()
+

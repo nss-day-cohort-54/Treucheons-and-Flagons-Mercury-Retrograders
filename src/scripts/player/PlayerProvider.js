@@ -4,7 +4,7 @@
 
 const API = "http://localhost:8088"
 
-const applicationStatePlayers = []
+let applicationStatePlayers = []
 
 export const fetchPlayers = () => {
     //Get players array from within json file
