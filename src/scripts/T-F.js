@@ -36,3 +36,6 @@ export const TF = () => {
         </section>
     </article>`
 }
+
+
+//create event listener for "gameOver" to rerender this page
