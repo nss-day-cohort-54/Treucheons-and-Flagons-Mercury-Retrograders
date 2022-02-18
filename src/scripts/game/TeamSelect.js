@@ -5,7 +5,7 @@
 
 //import teams array from team provided
 
-//EXPORT create empty teams array that will store the teams selected in the dropdowns
+//EXPORT create empty teamScore array that will generate and store three teamScore objects with a teamId that matches the teams selected in the dropdowns
 
 //identify html target that will be used to overwrite game area with team selection portion-gamePlay section
 
@@ -15,9 +15,13 @@
     //use simple for iteration to create list 3 times (for(i = 0, i < 3 , i++) )
         //use map method to iterate through teams array to produce options for each team, each value should be team ID
 
-    //use if/else statement to determine if 3 selections are unique, if they are, dispatch custom event "teamsSelected"
+//Create event listener that watches all the select boxes
 
-    //that will trigger the gameplay to start
+//Use if statement to determine if there are 3 selections and they are unique, 
+    //If they are create three empty objects with teamIds that match teams chosen and push them to exported array on line 8
+    //Invoke currentGame function in teamScoreList.js
+    //Then dispatch custom event "teamsSelected," that will trigger the gameplay to start
+
     
 
 

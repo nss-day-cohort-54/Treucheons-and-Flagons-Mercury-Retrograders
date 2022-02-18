@@ -10,18 +10,31 @@ const gameplayAppState = {
 
     teamsPlaying: [
         {
-            team1Id: "",
-            team1Points: "",
+            "id": 1,
+            "teamId": "",
+            "score": "",
+            "gameDate": ""
         },
         {
-            team2Id: "",
-            team2Points: "",
+            "id": 2,
+            "teamId": "",
+            "score": "",
+            "gameDate": ""
         },
         {
-            team3Id: "",
-            team3Points: "",
-        }
+            "id": 3,
+            "teamId": "",
+            "score": "",
+            "gameDate": ""
+        },
     ]
+}
+
+newTeamObject = {
+    1: 7,
+    3: 4,
+    6: 4,
+
 }
 
 

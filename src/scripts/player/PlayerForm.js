@@ -1,12 +1,22 @@
 //this module will contain a function that produces and input form for new player and assigns the player to a team
 
-import { getPlayers } from "./PlayerProvider.js";
-//import getTeams
-//import sendPlayer from playerProvider
-
 
 //define and export a function called playerForm that has 2 inputs for firstName, lastName, 
-//and a drop down to select team, and a button to add player to team
+export const playerForm = () => {
+    //and a drop down to select team, and a button to add player to team
+    let html = `
+    <div class="newPlayer">
+    <label class="label" for="firstName">First Name</label>
+    <input type="text" name="firstName" class="input" />
+    </div>
+    <div class="newPlayer">
+    <label class="label" for="lastName">Last Name</label>
+    <input type="text" name="lastName" class="input" />
+    </div>
+    <button class="button" id="newPlayerButton">Add New Player</button>
+    `
+    return html
+}
 
 
 //create a function that finds new id for the new player

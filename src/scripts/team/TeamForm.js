@@ -3,7 +3,15 @@
 import { getTeams } from "./TeamProvider.js";
 //import sendTeam function from team provider
 
-
+export const newTeam = () => {
+    let html = `
+    <div class="newTeam">
+    <label class="label" for="teamName">Team Name</label>
+    <input type="text" name="teamName" class="input" />
+    </div>
+    <button class="button" id="newTeamButton">Create Team</button>`
+return html
+}
 //create a function that displays html for new teams form
     //contains h3 -New Team
     //input box for team name
