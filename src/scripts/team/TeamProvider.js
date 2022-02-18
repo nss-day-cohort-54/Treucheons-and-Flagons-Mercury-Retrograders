@@ -23,3 +23,5 @@ export const getTeams = () => {
     const listArray = applicationStateTeam.map(team => ({...team}))
     return listArray
 }
+
+//create and export sendTeam function to send the player object to json
