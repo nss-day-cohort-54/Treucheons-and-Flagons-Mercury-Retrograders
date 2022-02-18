@@ -25,8 +25,6 @@ const gameplayAppState = {
 }
 
 
-//export a set team function that accepts id input of team selected in team select and adds to app state
-
 //create event listener that listens for "teamsSelected" from TeamSelect Module and produces html for gameplay
 
 
@@ -46,18 +44,19 @@ const gameplayAppState = {
 
 //create event listener that will listen for change in the input boxes
     //check whether points entered is greater than 3
-        //if so, create alert window
-        //if not, save the point value to the app state of that team
+        //if so, create alert window- yoou cant assign more than 3 points a round
+        //if less than 3, create alert window that says- must record 3 points
+        //if === 3, save the point value to the app state of that team
 
 
 
 //event listener for button
-    //if game round < 3 then we can add to round score and add points to each team
+    //if game round < 3 then we can add to round score and add points to each team, rerender the html w/new round # displayed
     //else
         //add points to each team
         //determine who has most points
         //declare winner with window alert
-        //invoke createNewTeamScoreObject
+        //invoke createNewTeamScoreObject function- push temp state to the json data
         //set gameRound to 1
         //dispatch new custom event "gameOver"
 
